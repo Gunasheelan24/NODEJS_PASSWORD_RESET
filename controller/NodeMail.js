@@ -18,7 +18,7 @@ const mailSend = (userEmail) => {
   const mailOption = {
     from: "gunasheelan1624@gmail.com",
     to: userEmail,
-    subject: "Postman password reset",
+    subject: "password reset",
     html: `<!DOCTYPE html>
 <html lang="en">
   <head>
@@ -65,14 +65,6 @@ const mailSend = (userEmail) => {
       <div class="container">
         <div class="row">
           <div class="col-sm-12 p-5 d-flex gap-5">
-            <div>
-              <img
-                src="https://i.pinimg.com/564x/b7/35/0d/b7350d8714fca61b71d81a323b6b7c69.jpg"
-                width="100px"
-                alt="img"
-                id="img-fl"
-              />
-            </div>
             <div id="flex-inner">
               <h1 class="colors">PASSWORD RESET</h1>
               <p class="text-dark h5" id="color">

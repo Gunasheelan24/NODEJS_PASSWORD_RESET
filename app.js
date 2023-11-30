@@ -10,10 +10,11 @@ const {
 } = require("./controller/user");
 const mongo = require("./Database/Connect");
 
+app.use(express.static("dist"));
 app.use(express.json());
-app.post("/signup", signupUser);
-app.post("/signin", signIn);
-app.patch("/forgetPassword", forgetPassword);
-app.patch("/password", changePassword);
+app.post("/api/signup", signupUser);
+app.post("/api/signin", signIn);
+app.patch("/api/forgetPassword", forgetPassword);
+app.patch("/api/password", changePassword);
 
 app.listen(port, (e) => console.log(`http://localhost:${port}`));
